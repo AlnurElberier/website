@@ -51,16 +51,23 @@
       <a href="mailto:a.elberier@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
     </div>
 
-    <!-- Navigation Include -->
-    <div id="nav-include"></div>
-    <script>
-      // Dynamically load nav.html into the nav-include div
-      fetch('nav.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-include').innerHTML = data;
-        });
-    </script>
+    <!-- Navigation Menu -->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li class="dropdown"><a href="#portfolio"><i class="bi bi-images navicon"></i> <span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+            <li><a href="service-details.html">Service Details</a></li>
+            <li><a href="starter-page.html">Starter Page</a></li>
+          </ul>
+        </li>
+        <li><a href="#personal-interests"><i class="bi bi-star navicon"></i> Interests</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
 
   </header>
 
